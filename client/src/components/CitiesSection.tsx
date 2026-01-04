@@ -16,6 +16,7 @@ interface CityCardProps {
   duration: string;
   travelers: string;
   highlight: string;
+  imageName?: string;
 }
 
 function CityCard({
@@ -33,13 +34,14 @@ function CityCard({
       ref={ref}
       className="opacity-0 group rounded-2xl overflow-hidden bg-white border border-blue-100 hover:border-blue-300 transition-all duration-300 hover:shadow-lg hover:-translate-y-2 cursor-pointer"
     >
-      {/* 城市背景 - 漸變色塊代替圖片 */}
-      <div className="h-48 bg-gradient-to-br from-blue-400 to-blue-600 relative overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center">
-            <p className="text-white text-5xl font-bold opacity-20">{name[0]}</p>
-          </div>
-        </div>
+      {/* 城市背景 - 使用專屬照片 */}
+      <div className="h-48 bg-cover bg-center relative overflow-hidden">
+        <img
+          src={`/images/${name === '東京' ? 'tokyo-city.jpg' : name === '首爾' ? 'seoul-city.jpg' : name === '曼谷' ? 'bangkok-city.jpg' : 'singapore-city.jpg'}`}
+          alt={name}
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/20"></div>
         <div className="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
           {highlight}
         </div>
