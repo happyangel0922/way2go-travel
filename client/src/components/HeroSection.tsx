@@ -31,9 +31,6 @@ export default function HeroSection() {
         
         {/* 右下角的電光藍漸變 */}
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-blue-400/10 to-transparent rounded-full blur-3xl"></div>
-
-        {/* 中央的細線裝飾 */}
-        <div className="absolute top-1/4 left-1/2 w-1 h-64 bg-gradient-to-b from-blue-500/20 to-transparent transform -translate-x-1/2"></div>
       </div>
 
       {/* 主要內容 */}
