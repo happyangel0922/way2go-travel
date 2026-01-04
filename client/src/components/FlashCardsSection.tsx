@@ -24,8 +24,8 @@ function Card({ title, description, buttonText, isDark = false }: CardProps) {
       ref={ref}
       className={`group animate-reveal-on-scroll rounded-2xl p-6 md:p-8 transition-all duration-300 hover:shadow-elevated hover:-translate-y-2 cursor-pointer opacity-0 ${
         isDark
-          ? "bg-black text-white"
-          : "bg-white text-black border border-gray-200 hover:border-gray-300"
+          ? "bg-gradient-to-br from-blue-600 to-blue-700 text-white"
+          : "bg-white text-gray-900 border border-blue-100 hover:border-blue-300 hover:bg-blue-50"
       }`}
     >
       {/* 卡片內容 */}
@@ -37,7 +37,7 @@ function Card({ title, description, buttonText, isDark = false }: CardProps) {
           </h3>
           <p
             className={`text-base md:text-lg leading-relaxed ${
-              isDark ? "text-gray-300" : "text-gray-600"
+              isDark ? "text-blue-100" : "text-gray-700"
             }`}
           >
             {description}
@@ -48,8 +48,8 @@ function Card({ title, description, buttonText, isDark = false }: CardProps) {
         <button
           className={`inline-flex items-center gap-2 font-semibold transition-all duration-300 group-hover:gap-3 ${
             isDark
-              ? "text-white hover:text-gray-200"
-              : "text-black hover:text-gray-700"
+              ? "text-white hover:text-blue-100"
+              : "text-blue-600 hover:text-blue-700"
           }`}
         >
           {buttonText}
@@ -89,14 +89,14 @@ export default function FlashCardsSection() {
   ];
 
   return (
-    <section className="w-full bg-white py-20 md:py-32">
+    <section className="w-full bg-gradient-to-b from-white to-blue-50 py-20 md:py-32">
       <div className="container max-w-6xl mx-auto px-4">
         {/* 區塊標題 */}
         <div className="mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-black mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
             探索城市的方式
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl">
+          <p className="text-lg text-gray-700 max-w-2xl">
             每一種旅遊風格都有其獨特的魅力。選擇最適合你的方式，開始你的城市冒險。
           </p>
         </div>

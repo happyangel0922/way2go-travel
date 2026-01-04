@@ -44,34 +44,34 @@
 }
 
 :root {
-  /* Minimalist Urbanism Color Palette */
-  --primary: #000000;
+  /* Modern Electric Blue Color Palette */
+  --primary: #0055FF;
   --primary-foreground: #FFFFFF;
-  --secondary: #F5F5F5;
-  --secondary-foreground: #000000;
-  --accent: #333333;
+  --secondary: #F2F5FF;
+  --secondary-foreground: #1A1A1A;
+  --accent: #0055FF;
   --accent-foreground: #FFFFFF;
   
   --radius: 1rem;
   --background: #FFFFFF;
-  --foreground: #000000;
+  --foreground: #1A1A1A;
   --card: #FFFFFF;
-  --card-foreground: #000000;
+  --card-foreground: #1A1A1A;
   --popover: #FFFFFF;
-  --popover-foreground: #000000;
-  --muted: #E8E8E8;
+  --popover-foreground: #1A1A1A;
+  --muted: #E8ECFF;
   --muted-foreground: #666666;
-  --destructive: #EF4444;
+  --destructive: #FF3B30;
   --destructive-foreground: #FFFFFF;
-  --border: #D3D3D3;
-  --input: #F5F5F5;
-  --ring: #000000;
+  --border: #D8E0FF;
+  --input: #F2F5FF;
+  --ring: #0055FF;
   --sidebar: #FFFFFF;
-  --sidebar-foreground: #000000;
-  --sidebar-accent: #F5F5F5;
-  --sidebar-accent-foreground: #000000;
-  --sidebar-border: #D3D3D3;
-  --sidebar-ring: #000000;
+  --sidebar-foreground: #1A1A1A;
+  --sidebar-accent: #F2F5FF;
+  --sidebar-accent-foreground: #0055FF;
+  --sidebar-border: #D8E0FF;
+  --sidebar-ring: #0055FF;
 }
 
 .dark {
